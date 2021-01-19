@@ -1,0 +1,77 @@
+:root {
+    /* declaração de variáveis em css */
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    /* reset padrão de margens e paddings para todo o documento */
+    margin: 0;
+    padding: 0;
+    /* define que a caixa não deve ultrapassar o tamanho especificado */
+    box-sizing: border-box;
+}
+
+
+/* elementos base */
+
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    /* alinhamento em tela */
+    display: flex;
+    /* 
+    por padrão o display do tipo flex coloca tudo em linha 
+    flex-direction: row; 
+    */
+    /* como o display é em linha, align-itens alinha na vertical */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a {
+    /* remove a decoração (linha, neste caso) do texto */
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+
+/* captura o evento do mouse sobre o objeto */
+
+header nav a:hover {
+    color: #fff;
+}
+
+
+/* filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/capa-dark.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
+
+.titulo {
+    font-size: 40px;
+}
