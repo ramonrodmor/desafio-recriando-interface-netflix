@@ -7,4 +7,5 @@ O projeto consiste criação de uma página web similar a página inicial da Net
 ### Tencologias utilizadas
 * HTML5;
 * CSS3 trabalhando com Flexbox;
+* Responsividade;
 * JavaScript com plugins Jquery e carrocel dinâmico.
